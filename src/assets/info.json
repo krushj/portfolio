@@ -1,0 +1,357 @@
+{
+  "user": {
+    "id": "krushna-jadhav",
+    "name": "Krushna Jadhav",
+    "headline": "Software Engineer II",
+    "resumeUrl": "src/assets/resume.pdf",
+    "contact": [
+        {
+            "id": "email",
+            "label": "Email",
+            "value": "krushna.jadhav.work@gmail.com",
+            "url": "mailto:krushna.jadhav.work@gmail.com",
+            "icon": "mail"
+        },
+        {
+            "id": "linkedin",
+            "label": "LinkedIn",
+            "value": "linkedin.com/in/krushna-j",
+            "url": "https://linkedin.com/in/krushna-j",
+            "icon": "linkedin"
+        },
+        {
+            "id": "medium",
+            "label": "Medium",
+            "value": "medium.com/@krushna-j",
+            "url": "https://medium.com/@krushna-j",
+            "icon": "medium"
+        },
+        {
+            "id": "location",
+            "label": "Location",
+            "value": "Mumbai, Maharashtra 400074",
+            "icon": "location"
+        }
+    ],
+    "skills": [
+      {
+        "id": "java",
+        "name": "Java",
+        "displayCategory": "backend",
+        "level": 4,
+        "icon": "js",
+        "years": 3
+      },
+      {
+        "id": "javascript",
+        "name": "JavaScript",
+        "displayCategory": "frontend",
+        "level": 4,
+        "icon": "js",
+        "years": 3
+      },
+      {
+        "id": "typescript",
+        "name": "TypeScript",
+        "displayCategory": "frontend",
+        "level": 4,
+        "icon": "ts",
+        "years": 2
+      },
+      {
+        "id": "node",
+        "name": "Node.js",
+        "displayCategory": "backend",
+        "level": 4,
+        "icon": "js",
+        "years": 2
+      },
+      {
+        "id": "express",
+        "name": "Express",
+        "displayCategory": "backend",
+        "level": 4,
+        "icon": "js",
+        "years": 2
+      },
+      {
+        "id": "sql",
+        "name": "SQL",
+        "displayCategory": "database",
+        "level": 4,
+        "icon": "json",
+        "years": 3
+      },
+      {
+        "id": "angular",
+        "name": "Angular",
+        "displayCategory": "frontend",
+        "level": 4,
+        "icon": "js",
+        "years": 2
+      },
+      {
+        "id": "react",
+        "name": "React",
+        "displayCategory": "frontend",
+        "level": 3,
+        "icon": "js",
+        "years": 1
+      },
+      {
+        "id": "scss",
+        "name": "SCSS",
+        "displayCategory": "frontend",
+        "level": 4,
+        "icon": "js"
+      },
+      {
+        "id": "redis",
+        "name": "Redis",
+        "displayCategory": "database",
+        "level": 3,
+        "icon": "js",
+        "years": 1
+      },
+      {
+        "id": "postgresql",
+        "name": "PostgreSQL",
+        "displayCategory": "database",
+        "level": 4,
+        "icon": "js"
+      },
+      {
+        "id": "aws-cdk",
+        "name": "AWS CDK",
+        "displayCategory": "cloud",
+        "level": 3
+      },
+      {
+        "id": "aws-lambda",
+        "name": "AWS Lambda",
+        "displayCategory": "cloud",
+        "level": 3,
+        "icon": "js"
+      },
+      {
+        "id": "git",
+        "name": "Git & GitHub",
+        "displayCategory": "tools",
+        "level": 4,
+        "icon": "js"
+      },
+      {
+        "id": "postman",
+        "name": "Postman",
+        "displayCategory": "tools",
+        "level": 4,
+        "icon": "js"
+      }
+    ]
+  },
+  "experiences": [
+    {
+      "id": "eds-se2",
+      "role": "Software Engineer II",
+      "company": "Equity Data Science",
+      "employmentType": "full-time",
+      "startDate": "2024-07",
+      "location": "Mumbai, India",
+      "summary": "Currently working across multiple modules, including portfolio construction, and contributing to risk management workflows and tools by managing data pipelines across multiple products. Responsible for building AWS Lambda functions, optimizing performance, and implementing client-driven requirements.",
+      "projects": [
+        {
+          "id": "excel-calculation-engine",
+          "name": "Excel-Style Calculation Engine",
+          "techStack": ["TypeScript", "Node.js", "Angular", "AWS Lambda", "SQL", "Unit Testing"],
+          "highlights": [
+            "Developed a formula engine with tokenizer, parser, validator, evaluator, and autocomplete using dependency tracking to recalculate only affected cells, with 2K+ unit tests covering core and edge-case scenarios.",
+            "Improved calculation performance by 99%, reducing processing time from 400 seconds to 2.31 seconds when processing 30,000 records across 140 columns."
+          ],
+          "improvements": [
+            {
+              "label": "Performance",
+              "before": 400,
+              "after": 2.31,
+              "unit": "s"
+            }
+          ]
+        },
+        {
+          "id": "price-target-restructure",
+          "name": "Price Target Restructure",
+          "techStack": ["TypeScript", "Node.js", "Java", "Angular", "AWS Lambda", "Redis", "SQL", "AWS CDK"],
+          "highlights": [
+            "Restructured the database, consolidating 12 legacy tables into an optimized schema with proper relational joins. Built 4 AWS Lambda functions using AWS CDK to automate data processing.",
+            "Reduced database records by 90% (4M to 400K) through team-based data organization, eliminating redundancy and optimizing queries, reducing UI data fetch time by 81% (16 seconds to 3 seconds in production).",
+            "Implemented PostgreSQL COPY API, improving insert performance by 75% (2 minutes to 30 seconds for 30K records)."
+          ],
+          "improvements": [
+            {
+              "label": "Database Records",
+              "before": 4000,
+              "after": 400,
+               "unit": "k"
+            },
+            {
+                "label": "Database bulk insert",
+                "before": 120,
+                "after": 30,
+                "unit": "s"
+            },
+            {
+              "label": "Performance",
+              "before": 16,
+              "after": 3,
+              "unit": "s"
+            }
+            
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eds-intern",
+      "role": "Software Engineer Intern",
+      "company": "Equity Data Science",
+      "employmentType": "internship",
+      "startDate": "2024-01",
+      "endDate": "2024-06",
+      "location": "Mumbai, India",
+      "summary": "Enhanced the Excel-based data import process for portfolio construction, while concurrently upgrading the entire platform from Angular v14 to v16 to deliver a more streamlined and improved design.",
+      "projects":[
+        {
+            "id": "angular-migration",
+            "name": "Angular Framework Migration (v14 to v16)",
+            "techStack": ["TypeScript", "Angular", "SCSS", "NPM"],
+            "highlights": [
+                "Migrated the entire enterprise application from Angular 14 to 16 in 2 months, ahead of the 3.5-month timeline.",
+                "Refactored codebase to align with Angular's updated design patterns, resolving breaking changes platform-wide.",
+                "Centralized design system establishing consistency across 50+ components and 600+ pages."
+            ],
+            "improvements": [
+                {
+                    "label": "Bundle Size",
+                    "before": 13.10,
+                    "after": 8.7,
+                    "unit": "MB"
+                  }
+            ]
+          }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "jobsentinel",
+      "name": "JobSentinel",
+      "techStack": ["Java", "Spring Boot", "Jsoup", "Email"],
+      "highlights": [
+        "A personalised job alert system that targets certain career pages and alerts users based on the skills matched ratio.",
+        "Features a Jsoup crawler that scrapes Naukri job listings via JSON interception, automated notifications via email."
+      ]
+    },
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "techStack": ["React", "Tailwind CSS", "Framer Motion"],
+      "highlights": [
+        "Animated skill chips with physics-based floating animations. Dynamic performance metrics with auto-calculated percentages.",
+        "Light/dark theme with custom scrollbar. Experience timeline, responsive design, SEO optimized, fully TypeScript architecture"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "mca-vesit",
+      "institution": "Vivekanand Education Society's Institute Of Technology",
+      "degree": "Master of Computer Applications (MCA)",
+      "startDate": "2022-11",
+      "endDate": "2024-06",
+      "location": "Mumbai, India",
+      "gpa": "8.57/10.0",
+      "highlights": [
+        "Focused on JavaScript, Node.js and related technologies."
+      ]
+    },
+    {
+      "id": "bca-cocsit",
+      "institution": "R.E.S.'s College of Computer Science & I.T. Latur (COCSIT)",
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "startDate": "2019-07",
+      "endDate": "2022-05",
+      "location": "Latur, India",
+      "gpa": "9.69/10.0",
+      "highlights": [
+        "Grade: O (Distinction).",
+        "Strengthened Java and HTML5 fundamentals."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "id": "java-contest-2022",
+      "title": "1st Place - Java & C++ Programming Contests",
+      "issuer": "COCSIT Latur",
+      "date": "2022",
+      "description": "District-level programming contests in Java and C++."
+    },
+    {
+      "id": "web-tech-2021",
+      "title": "2nd Place - Web Technology Contest",
+      "issuer": "COCSIT Latur",
+      "date": "2021",
+      "description": "District-level web technology competition."
+    }
+  ],
+  "certifications": [
+    {
+      "id": "nptel-dsa-java-2023",
+      "title": "Data Structure And Algorithms Using Java",
+      "issuer": "NPTEL",
+      "date": "2023-11",
+      "link": "https://drive.google.com/file/d/1juqjOal0uo1zGiGLWyWB5hvMJFco_4xU/view?usp=drivesdk"
+    },
+    {
+      "id": "nptel-intro-java-2023",
+      "title": "Introduction to Programming Using Java",
+      "issuer": "NPTEL",
+      "date": "2023-11",
+      "link": "https://drive.google.com/file/d/1jkywXhqBjxEDp5mHdSQsqKYD8ybqsnsW/view?usp=drivesdk"
+    },
+    {
+      "id": "coding-ninjas-java-2023",
+      "title": "Java",
+      "issuer": "Coding Ninjas",
+      "date": "2023-07",
+      "link": "https://files.codingninjas.in/certi_image3061456ad5f8c35db548de80911ee4e64223ba.jpg"
+    },
+    {
+      "id": "scalar-react-bootcamp-2022",
+      "title": "React Bootcamp",
+      "issuer": "Scalar",
+      "date": "2022-11",
+      "link": "https://drive.google.com/file/d/1q5fyLCRhhFAH3dx6Z355ki3ADMMtbPUq/view?usp=drivesdk"
+    },
+    {
+      "id": "wipro-pbl-2021",
+      "title": "Wipro-PBL",
+      "issuer": "TalentNext Wipro",
+      "date": "2021-12",
+      "link": "https://drive.google.com/file/d/15b24fX4Z0uGcyJIzfeVdASxPl8_Om0K8/view?usp=drivesdk"
+    },
+    {
+      "id": "hackerrank-java",
+      "title": "Java (Basic)",
+      "issuer": "HackerRank",
+      "date": "2023",
+      "link": "src/assets/ceritificates/java_hr.png"
+    },
+    {
+        "id": "hackerrank-sql",
+        "title": "SQL",
+        "issuer": "HackerRank",
+        "date": "2023",
+        "link": "src/assets/ceritificates/sql_hr.png"
+      }
+  ]
+}
