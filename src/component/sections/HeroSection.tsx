@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import type { User } from '../../types/User'
 import { Icon } from '../shared/Icon'
+import { ThemeToggle } from '../shared/ThemeToggle'
 
 interface HeroSectionProps {
   user: User
@@ -33,6 +34,9 @@ export function HeroSection({ user }: HeroSectionProps) {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-blue-50/40 to-indigo-50/30 dark:from-slate-950 dark:via-slate-900 dark:to-blue-950/40">
+      <div className="absolute top-6 right-6 z-2">
+        <ThemeToggle />
+      </div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,_rgba(59,130,246,0.08),_transparent_50%),radial-gradient(circle_at_80%_80%,_rgba(99,102,241,0.08),_transparent_50%)] dark:bg-[radial-gradient(circle_at_20%_20%,_rgba(59,130,246,0.15),_transparent_50%),radial-gradient(circle_at_80%_80%,_rgba(99,102,241,0.15),_transparent_50%)]" />
       
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-20">

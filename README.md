@@ -1,73 +1,140 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive portfolio website showcasing my work, skills, and experience as a Software Engineer II. Built with React, TypeScript, and Framer Motion for smooth animations and an engaging user experience.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Add your live demo link here]
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Animated Skills Visualization**: Floating skill chips with physics-based animations, color-coded by category (Backend, Frontend, Database, Cloud, Tools)
+- **Dynamic Performance Metrics**: Automatically calculates and displays percentage improvements from raw data with animated progress bars
+- **Light/Dark Theme**: Seamless theme switching with custom scrollbar styling and persistent theme preference
+- **Experience Timeline**: Visual timeline layout with integrated project cards showing work history with metrics
+- **Responsive Design**: Mobile-first approach optimized for all screen sizes
+- **SEO Optimized**: Complete meta tags, Open Graph, and Twitter card support
+- **Type-Safe Architecture**: Fully typed with TypeScript for better developer experience
+- **Smooth Animations**: Scroll-triggered animations using Framer Motion
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend Framework**: React 19
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+my-portfolio/
+├── src/
+│   ├── assets/
+│   │   └── info.json          # Centralized portfolio data
+│   ├── component/
+│   │   ├── sections/          # Page sections (Hero, Skills, Experience, etc.)
+│   │   └── shared/            # Reusable components (ThemeToggle, Section, etc.)
+│   ├── types/                 # TypeScript type definitions
+│   ├── utils/                 # Utility functions (metrics, formatting)
+│   ├── App.tsx                # Main application component
+│   └── main.tsx               # Application entry point
+├── public/                    # Static assets (resume.pdf, etc.)
+├── vite.config.ts            # Vite configuration
+└── package.json              # Dependencies and scripts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (v18 or higher)
+- Yarn or npm
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
 ```
+
+2. Install dependencies:
+```bash
+yarn install
+# or
+npm install
+```
+
+3. Start the development server:
+```bash
+yarn dev
+# or
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## 📝 Available Scripts
+
+- `yarn dev` - Start development server
+- `yarn build` - Build for production
+- `yarn preview` - Preview production build locally
+- `yarn lint` - Run ESLint
+- `yarn deploy` - Build and deploy to GitHub Pages
+
+## 🎨 Customization
+
+### Updating Portfolio Data
+
+All portfolio content is managed in `src/assets/info.json`. Update this file to change:
+
+- Personal information (name, headline, contact)
+- Skills and categories
+- Work experience and projects
+- Education details
+- Certifications and awards
+
+### Styling
+
+- Colors and themes: Modify Tailwind classes in components
+- Animations: Adjust Framer Motion variants in component files
+- Layout: Update component structure in `src/component/sections/`
+
+### Repository Name
+
+Update the `REPO_NAME` constant in `vite.config.ts` to match your GitHub repository name for proper GitHub Pages deployment.
+
+## 🚢 Deployment
+
+### GitHub Pages
+
+1. Update `REPO_NAME` in `vite.config.ts` to match your repository name
+2. Enable GitHub Pages in repository settings (Settings → Pages → Source: `gh-pages` branch)
+3. Deploy:
+```bash
+yarn deploy
+# or
+npm run deploy
+```
+
+Your site will be available at: `https://username.github.io/repository-name/`
+
+For detailed deployment instructions, see [DEPLOY.md](./DEPLOY.md)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📧 Contact
+
+- **Email**: krushna.jadhav.work@gmail.com
+- **LinkedIn**: [linkedin.com/in/krushna-j](https://linkedin.com/in/krushna-j)
+- **Medium**: [medium.com/@krushna-j](https://medium.com/@krushna-j)
+
+## 🙏 Acknowledgments
+
+- Built with [Vite](https://vitejs.dev/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Animated with [Framer Motion](https://www.framer.com/motion/)
