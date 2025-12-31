@@ -79,7 +79,7 @@ export function HeroSection({ user }: HeroSectionProps) {
             className="flex flex-wrap items-center justify-center gap-4 mb-8"
           >
             <motion.a
-              href={`public/resume.pdf`}
+              href={user.resumeUrl ?? `/resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
