@@ -254,6 +254,8 @@
       "id": "portfolio",
       "name": "Portfolio",
       "techStack": ["React", "Tailwind CSS", "Framer Motion"],
+      "repoUrl": "https://github.com/krushj/portfolio",
+      "liveUrl": "https://krushj.github.io/portfolio/",
       "highlights": [
         "Animated skill chips with physics-based floating animations. Dynamic performance metrics with auto-calculated percentages.",
         "Light/dark theme with custom scrollbar. Experience timeline, responsive design, SEO optimized, fully TypeScript architecture"
