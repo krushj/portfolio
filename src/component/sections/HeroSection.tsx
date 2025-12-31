@@ -34,7 +34,7 @@ export function HeroSection({ user }: HeroSectionProps) {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-blue-50/40 to-indigo-50/30 dark:from-slate-950 dark:via-slate-900 dark:to-blue-950/40">
-      <div className="absolute top-6 right-6 z-2">
+      <div className="absolute top-6 right-6 z-50">
         <ThemeToggle />
       </div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,_rgba(59,130,246,0.08),_transparent_50%),radial-gradient(circle_at_80%_80%,_rgba(99,102,241,0.08),_transparent_50%)] dark:bg-[radial-gradient(circle_at_20%_20%,_rgba(59,130,246,0.15),_transparent_50%),radial-gradient(circle_at_80%_80%,_rgba(99,102,241,0.15),_transparent_50%)]" />
@@ -79,7 +79,7 @@ export function HeroSection({ user }: HeroSectionProps) {
             className="flex flex-wrap items-center justify-center gap-4 mb-8"
           >
             <motion.a
-              href={user.resumeUrl}
+              href={`public/resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
