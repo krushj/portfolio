@@ -116,7 +116,7 @@ export function Project({
               View Code
             </motion.a>
           )}
-          {project.liveUrl && (
+          {project.liveUrl && project.id !== 'portfolio' && (
             <motion.a
               href={project.liveUrl}
               target="_blank"
